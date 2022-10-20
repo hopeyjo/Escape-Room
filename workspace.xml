@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a02bdbc3-477a-4197-bc58-e0f39d158ac1" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27Q86fIr5k0NZk8yVcRMBF8hWPg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" uri="http://localhost:63342/ERFP 05.11/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a02bdbc3-477a-4197-bc58-e0f39d158ac1" name="Changes" comment="" />
+      <created>1649240775872</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649240775872</updated>
+      <workItem from="1649240796056" duration="3819000" />
+      <workItem from="1649264564674" duration="2493000" />
+      <workItem from="1649295683446" duration="1762000" />
+      <workItem from="1649350564901" duration="17000" />
+      <workItem from="1649350583909" duration="2846000" />
+      <workItem from="1649436977409" duration="2703000" />
+      <workItem from="1649475890766" duration="4641000" />
+      <workItem from="1649696155197" duration="2513000" />
+      <workItem from="1650038184231" duration="5727000" />
+      <workItem from="1650045088271" duration="8656000" />
+      <workItem from="1650140331429" duration="221000" />
+      <workItem from="1650140566671" duration="3135000" />
+      <workItem from="1650316553875" duration="2431000" />
+      <workItem from="1650390425926" duration="2177000" />
+      <workItem from="1650473766835" duration="2572000" />
+      <workItem from="1650518663626" duration="3104000" />
+      <workItem from="1650560172800" duration="2796000" />
+      <workItem from="1650646663830" duration="2768000" />
+      <workItem from="1650686439371" duration="1336000" />
+      <workItem from="1650687807318" duration="1709000" />
+      <workItem from="1650842274100" duration="3494000" />
+      <workItem from="1650905925872" duration="2726000" />
+      <workItem from="1650992128230" duration="2900000" />
+      <workItem from="1651078577960" duration="2492000" />
+      <workItem from="1651081127671" duration="336000" />
+      <workItem from="1651251366729" duration="2193000" />
+      <workItem from="1651341200334" duration="6000000" />
+      <workItem from="1651446552730" duration="2592000" />
+      <workItem from="1651597547783" duration="2320000" />
+      <workItem from="1651684174646" duration="1997000" />
+      <workItem from="1651856160799" duration="12000" />
+      <workItem from="1651856768103" duration="204000" />
+      <workItem from="1651857371748" duration="986000" />
+      <workItem from="1651941841928" duration="5095000" />
+      <workItem from="1652201765671" duration="2893000" />
+      <workItem from="1652227848108" duration="7363000" />
+      <workItem from="1652407661073" duration="2541000" />
+      <workItem from="1652491498872" duration="3926000" />
+      <workItem from="1652576164915" duration="6285000" />
+      <workItem from="1652664151760" duration="1635000" />
+      <workItem from="1652668250724" duration="3216000" />
+      <workItem from="1652673355508" duration="803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ERFP_04_15$index_html.dat" NAME="index.html Coverage Results" MODIFIED="1650140371932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
