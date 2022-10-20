@@ -1,0 +1,860 @@
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.bedroom {
+    position: relative;
+    visibility: visible;
+    width: 1200px;
+    top: 0;
+    left: 0;
+}
+
+.full {
+    position: absolute;
+    visibility: hidden;
+    width: 1200px;
+    top: 0;
+    left: 0;
+}
+
+.forwardButton
+{
+    position: absolute;
+    top: 50px;
+    left: 1000px;
+    padding: 12px 48px;
+    opacity: 0
+}
+
+.backButton
+{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    padding: 12px 48px;
+    opacity: 0
+}
+
+.inventory
+{
+    width: 160px
+}
+
+.bathroomKey
+{
+    position: absolute;
+    visibility: hidden;
+    width: 50px;
+    top: 630px;
+    left: 770px;
+}
+
+.invBathroomKey
+{
+    position: absolute;
+    visibility: hidden;
+    width: 70px;
+    top: 35px;
+    left: 1250px;
+}
+
+.bathroomKeyButton
+{
+    position: absolute;
+    top: 630px;
+    left: 775px;
+    padding: 8px 8px;
+    opacity: 0;
+}
+
+.bedroomDresserButton
+{
+    position: absolute;
+    top: 540px;
+    left: 1085px;
+    padding: 8px 8px;
+    opacity: 0;
+}
+
+.box
+{
+    position: absolute;
+    display: none;
+    top: 250px;
+    left: 500px;
+    width: 250px;
+    height: 250px;
+}
+
+.xOut
+{
+    position: absolute;
+    visibility: hidden;
+    width: 80px;
+    top: 20px;
+    left: 1085px;
+}
+
+.xOutButton
+{
+    position: absolute;
+    display: none;
+    top: 20px;
+    left: 1085px;
+    padding: 30px 30px;
+    opacity: 0;
+}
+
+.fridgeLock
+{
+    position: absolute;
+    visibility: hidden;
+    width: 200px;
+    top: 257px;
+    left: 759px;
+}
+
+.fridgeLockButton
+{
+    position: absolute;
+    display: none;
+    top: 300px;
+    left: 810px;
+    padding: 15px 10px;
+    opacity: 0;
+}
+
+.openDresserButton
+{
+    position: absolute;
+    display: none;
+    top: 265px;
+    left: 300px;
+    padding: 150px 200px;
+    opacity: 0;
+}
+
+.yarn
+{
+    position: absolute;
+    visibility: hidden;
+    width: 70px;
+    top: 130px;
+    left: 1250px;
+}
+
+.invDresserNote
+{
+    position: absolute;
+    visibility: hidden;
+    width: 70px;
+    top: 245px;
+    left: 1250px;
+}
+
+.dresserNote
+{
+    position: absolute;
+    visibility: hidden;
+    width: 600px;
+    top: 130px;
+    left: 300px;
+}
+
+.dresserNoteButton
+{
+    position: absolute;
+    display: none;
+    top: 245px;
+    left: 1250px;
+    padding: 25px 20px;
+    opacity: 0;
+}
+
+#num1
+{
+    position: absolute;
+    display: none;
+    top: 360px;
+    left: 460px;
+    width: 55px;
+    height: 90px;
+    font-size: 60px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+#num2
+{
+    position: absolute;
+    display: none;
+    top: 360px;
+    left: 527px;
+    width: 55px;
+    height: 90px;
+    font-size: 60px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+#num3
+{
+    position: absolute;
+    display: none;
+    top: 360px;
+    left: 595px;
+    width: 55px;
+    height: 90px;
+    font-size: 60px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+#num4
+{
+    position: absolute;
+    display: none;
+    top: 360px;
+    left: 660px;
+    width: 55px;
+    height: 90px;
+    font-size: 60px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+.dresserNoteButton
+{
+    position: absolute;
+    display: none;
+    top: 245px;
+    left: 1250px;
+    padding: 25px 20px;
+    opacity: 0;
+}
+
+.fridgeUnlockButton
+{
+    position: absolute;
+    display: none;
+    top: 475px;
+    left: 540px;
+    padding: 10px 30px;
+}
+
+.puzzle1
+{
+    position: absolute;
+    visibility: hidden;
+    width: 40px;
+    top: 570px;
+    left: 90px;
+}
+
+.puzzle1Button
+{
+    position: absolute;
+    display: none;
+    width: 40px;
+    height: 40px;
+    top: 570px;
+    left: 90px;
+    opacity: 0;
+}
+
+.invPuzzle1
+{
+    position: absolute;
+    visibility: hidden;
+    width: 70px;
+    top: 130px;
+    left: 1415px;
+}
+
+.puzzle2
+{
+    position: absolute;
+    visibility: visible;
+    width: 40px;
+    top: 197px;
+    left: 980px;
+}
+
+.puzzle2Button
+{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 197px;
+    left: 980px;
+    opacity: 0;
+}
+
+.invPuzzle2
+{
+    position: absolute;
+    visibility: hidden;
+    width: 70px;
+    top: 23px;
+    left: 1415px;
+}
+
+.puzzle3
+{
+    position: absolute;
+    visibility: hidden;
+    width: 100px;
+    top: 455px;
+    left: 110px;
+}
+
+.fullPuzzle
+{
+    position: absolute;
+    visibility: visible;
+    width: 80px;
+    top: 255px;
+    left: 90px;
+}
+
+.puzzleButton
+{
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    top: 255px;
+    left: 90px;
+    opacity: 0;
+}
+
+.invPuzzle1Button
+{
+    position: absolute;
+    display: none;
+    width: 70px;
+    height: 70px;
+    top: 130px;
+    left: 1415px;
+    opacity: 0.5;
+}
+
+.invPuzzle2Button
+{
+    position: absolute;
+    display: none;
+    width: 70px;
+    height: 70px;
+    top: 23px;
+    left: 1415px;
+    opacity: 0.5;
+}
+
+.puzzle3Button
+{
+    position: absolute;
+    display: none;
+    width: 100px;
+    height: 100px;
+    top: 455px;
+    left: 110px;
+    opacity: 0;
+}
+
+.invPuzzle3
+{
+    position: absolute;
+    visibility: hidden;
+    width: 70px;
+    top: 245px;
+    left: 1415px;
+}
+
+.magnet
+{
+    position: absolute;
+    visibility: hidden;
+    transform: rotate(90deg);
+    width: 200px;
+    top: 185px;
+    left: 550px;
+}
+
+.magnetButton
+{
+    position: absolute;
+    display: none;
+    width: 160px;
+    height: 40px;
+    top: 250px;
+    left: 570px;
+    opacity: 0;
+}
+
+.invMagnet
+{
+    position: absolute;
+    visibility: hidden;
+    width: 100px;
+    top: 348px;
+    left: 1235px;
+}
+
+.computerLock
+{
+    position: absolute;
+    visibility: visible;
+    width: 40px;
+    top: 410px;
+    left: 135px;
+}
+
+.computerLockButton
+{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 65px;
+    top: 410px;
+    left: 135px;
+    opacity: 0;
+}
+
+.computerColor1
+{
+    position: absolute;
+    display: none;
+    top: 300px;
+    left: 250px;
+    width: 100px;
+    height: 150px;
+    background-color: #000000;
+}
+
+.computerColor2
+{
+    position: absolute;
+    display: none;
+    top: 300px;
+    left: 450px;
+    width: 100px;
+    height: 150px;
+    background-color: #000000;
+}
+
+.computerColor3
+{
+    position: absolute;
+    display: none;
+    top: 300px;
+    left: 650px;
+    width: 100px;
+    height: 150px;
+    background-color: #000000;
+}
+
+.computerColor4
+{
+    position: absolute;
+    display: none;
+    top: 300px;
+    left: 850px;
+    width: 100px;
+    height: 150px;
+    background-color: #000000;
+}
+
+.kitchenCupsButton
+{
+    position: absolute;
+    display: none;
+    width: 60px;
+    height: 130px;
+    top: 410px;
+    left: 780px;
+    opacity: 0;
+}
+
+.bathroomSinkButton
+{
+    position: absolute;
+    display: none;
+    width: 150px;
+    height: 100px;
+    top: 430px;
+    left: 80px;
+    opacity: 0;
+}
+
+.box1
+{
+    position: absolute;
+    display: none;
+    top: 27px;
+    left: 721px;
+    width: 242px;
+    height: 242px;
+}
+
+.box2
+{
+    position: absolute;
+    display: none;
+    top: 269px;
+    left: 237px;
+    width: 242px;
+    height: 242px;
+}
+
+.box3
+{
+    position: absolute;
+    display: none;
+    top: 511px;
+    left: 479px;
+    width: 242px;
+    height: 242px;
+}
+
+.puzzle1In
+{
+    position: absolute;
+    visibility: hidden;
+    top: 27px;
+    left: 721px;
+    width: 242px;
+    height: 242px;
+}
+
+.puzzle2In
+{
+    position: absolute;
+    visibility: hidden;
+    top: 269px;
+    left: 237px;
+    width: 242px;
+    height: 242px;
+}
+
+.puzzle3In
+{
+    position: absolute;
+    visibility: hidden;
+    top: 511px;
+    left: 479px;
+    width: 242px;
+    height: 242px;
+}
+
+.boxYM
+{
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 70px;
+    top: 130px;
+    left: 1250px;
+}
+
+.boxDrain
+{
+    position: absolute;
+    display: none;
+    width: 160px;
+    height: 160px;
+    top: 300px;
+    left: 515px;
+}
+
+.sinkNum
+{
+    position: absolute;
+    visibility: hidden;
+    width: 800px;
+    top: 200px;
+    left: 250px;
+}
+
+.next
+{
+    position: absolute;
+    visibility: visible;
+    width: 200px;
+    top: 600px;
+    left: 850px;
+}
+
+.nextButton
+{
+    position: absolute;
+    visibility: visible;
+    width: 200px;
+    height: 85px;
+    top: 600px;
+    left: 850px;
+    box-shadow: 0 9px #999;
+    opacity: 0.5;
+}
+
+.nextButton:hover {background-color: lightskyblue}
+
+.nextButton:active
+{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+canvas
+{
+    position: absolute;
+    display: none;
+    top: 200px;
+    left: 350px;
+    background-image: url("resources/grass.png");
+}
+
+.dots1
+{
+    position: absolute;
+    visibility: hidden;
+    top: 380px;
+    left: 400px;
+    width: 100px;
+}
+
+.dots2
+{
+    position: absolute;
+    visibility: hidden;
+    top: 380px;
+    left: 700px;
+    width: 100px;
+}
+
+.ohNo
+{
+    position: absolute;
+    visibility: hidden;
+    top: 380px;
+    left: 500px;
+    width: 250px;
+}
+
+.overslept
+{
+    position: absolute;
+    visibility: hidden;
+    top: 180px;
+    left: 180px;
+    width: 900px;
+}
+
+.text
+{
+    position: absolute;
+    visibility: hidden;
+    top: 450px;
+    left: 200px;
+    width: 800px;
+}
+
+.computerNum
+{
+    position: absolute;
+    visibility: hidden;
+    top: 200px;
+    left: 500px;
+    width: 250px;
+}
+
+.bathroomBox
+{
+    position: absolute;
+    visibility: hidden;
+    top: 291px;
+    left: 910px;
+    width: 70px;
+}
+
+.bathroomBoxButton
+{
+    position: absolute;
+    display: none;
+    top: 294px;
+    left: 910px;
+    width: 70px;
+    height: 35px;
+    opacity: 0;
+}
+
+.keypadButton
+{
+    position: absolute;
+    display: none;
+    top: 450px;
+    left: 625px;
+    width: 95px;
+    height: 130px;
+    opacity: 0;
+}
+
+.kb1
+{
+    position: absolute;
+    display: none;
+    top: 515px;
+    left: 500px;
+    width: 55px;
+    height: 55px;
+    opacity: 0;
+}
+
+.kb2
+{
+    position: absolute;
+    display: none;
+    top: 515px;
+    left: 560px;
+    width: 55px;
+    height: 55px;
+    opacity: 0;
+}
+
+.kb5
+{
+    position: absolute;
+    display: none;
+    top: 455px;
+    left: 560px;
+    width: 55px;
+    height: 55px;
+    opacity: 0;
+}
+
+.kb8
+{
+    position: absolute;
+    display: none;
+    top: 390px;
+    left: 560px;
+    width: 55px;
+    height: 55px;
+    opacity: 0;
+}
+
+.kbEnter
+{
+    position: absolute;
+    display: none;
+    top: 580px;
+    left: 560px;
+    width: 125px;
+    height: 55px;
+    opacity: 0;
+}
+
+.cheatGift1
+{
+    position: absolute;
+    visibility: visible;
+    top: 450px;
+    left: 700px;
+    width: 80px;
+}
+
+.cheatButton1
+{
+    position: absolute;
+    display: block;
+    top: 450px;
+    left: 700px;
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+}
+
+#cheatPuzzle1Sol
+{
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 100px;
+    top: 500px;
+    left: 500px;
+    font-size: 60px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+.cheatSubmitButton1
+{
+    position: absolute;
+    display: none;
+    top: 615px;
+    left: 530px;
+    width: 150px;
+    height: 30px;
+}
+
+.boltCutter
+{
+    position: absolute;
+    visibility: hidden;
+    top: 475px;
+    left: 1230px;
+    width: 110px;
+}
+
+.boxBoltCutter
+{
+    position: absolute;
+    display: none;
+    width: 150px;
+    height: 150px;
+    top: 120px;
+    left: 635px;
+}
+
+.openingScreen
+{
+    position: absolute;
+    visibility: visible;
+    width: 1200px;
+    top: 0;
+    left: 0;
+}
+
+.endText
+{
+    position: absolute;
+    visibility: hidden;
+    width: 700px;
+    top: 400px;
+    left: 250px;
+}
+
+#userProgress {
+    width: 71.7%;
+    background-color: #ddd;
+}
+
+#pBar {
+    visibility: visible;
+    top: 10px;
+    left: 10px;
+    width: 0;
+    height: 30px;
+    background-color: darkgreen;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ESCAPE ROOM!</title>
+    <link rel = "stylesheet" href = "myStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "myJS.js"></script>
+
+</head>
+</body>
+
+<!--progress bar was learned from the internet-->
+<div id="userProgress">
+    <div id="pBar">0%</div>
+</div>
+
+<div class="parent">
+    <img class="bedroom" id="bedroomImg" src="resources/bedroom.jpg"/>
+    <img class="full" id="kitchenImg" src="resources/kitchen.jpg"/>
+    <img class="full" id="bathroomImg" src="resources/bathroom.jpg"/>
+    <img class="full" id="frontDoorImg" src="resources/frontDoor.png"/>
+    <img class="inventory" id="inventoryImg1" src="resources/inventory.jpg"/>
+    <img class="inventory" id="inventoryImg2" src="resources/inventory.jpg"/>
+
+    <img class="cheatGift1" id="cheatGift1Img" src="resources/cheatGift1.png"/>
+    <img class="full" id="keyPadImg" src="resources/keyPad.png"/>
+    <img class="puzzle1" id="puzzle1Img" src="resources/puzzle1.png"/>
+    <img class="puzzle2" id="puzzle2Img" src="resources/puzzle2.png"/>
+    <img class="bathroomKey" id="bathroomKeyImg" src="resources/bathroomKey.png"/>
+    <img class="invBathroomKey" id="invBathroomKeyImg" draggable="true" ondragstart="drag(event)" src="resources/bathroomKey.png"/>
+    <img class="full" id="dresserKeyholeImg" src="resources/dresserKeyhole.jpg"/>
+    <img class="full" id="openDresserEmptyImg" src="resources/openDresserEmpty.png"/>
+    <img class="full" id="openDresserImg" src="resources/openDresser.png"/>
+    <img class="fridgeLock" id="fridgeLockImg" src="resources/fridgeLock.png"/>
+    <img class="yarn" id="yarnImg" draggable="true" ondragstart="drag(event)" src="resources/yarn.png"/>
+    <img class="invDresserNote" id="invDresserNoteImg" src="resources/dresserNote.PNG"/>
+    <img class="dresserNote" id="dresserNoteImg" src="resources/dresserNote.PNG"/>
+    <img class="full" id="fridgePasswordImg" src="resources/fridgePassword.png"/>
+    <img class="full" id="openFridgeImg" src="resources/openFridge.png"/>
+    <img class="puzzle3" id="puzzle3Img" src="resources/puzzle3.png"/>
+    <img class="fullPuzzle" id="fullPuzzleImg" src="resources/fullPuzzle.png"/>
+    <img class="full" id="puzzleImg" src="resources/puzzle.png"/>
+    <img class="magnet" id="magnetImg" src="resources/magnet.png"/>
+    <img class="invMagnet" id="invMagnetImg" draggable="true" ondragstart="drag(event)" src="resources/magnet.png"/>
+    <img class="computerLock" id="computerLockImg" src="resources/locked.png"/>
+    <img class="full" id="computerScreen" src="resources/computerScreen.png"/>
+    <img class="full" id="kitchenCupsImg" src="resources/kitchenCups.png"/>
+    <img class="full" id="bathroomSinkImg" src="resources/bathroomSink.png"/>
+    <img class="sinkNum" id="sinkNumImg" src="resources/magnetYarn5.png"/>
+    <img class="computerNum" id="computerNumImg" src="resources/two.png"/>
+    <img class="bathroomBox" id="bathroomBoxImg" src="resources/bathroomBox.png"/>
+    <img class="full" id="bathroomBoxLockImg" src="resources/bathroomBoxLock.png"/>
+    <img class="full" id="bathroomBoxUnlockedImg" src="resources/bathroomBoxUnlocked.png"/>
+    <img class="full" id="puzzleNum" src="resources/puzzleNum.png"/>
+    <img class="full" id="cheatPuzzle1Img" src="resources/cheatPuzzle1.png"/>
+    <img class="boltCutter" id="boltCutterImg" draggable="true" ondragstart="drag(event)" src="resources/boltCutter.png"/>
+    <img class="full" id="openFrontDoorImg" src="resources/openFrontDoor.png"/>
+
+    <input id = "cheatPuzzle1Sol" type = "text">
+
+    <img class="puzzle1In" id="puzzle1InImg" src="resources/puzzle1.png"/>
+    <img class="puzzle2In" id="puzzle2InImg" src="resources/puzzle2.png"/>
+    <img class="puzzle3In" id="puzzle3InImg" src="resources/puzzle3.png"/>
+
+    <img class="invPuzzle1" id="invPuzzle1Img" draggable="true" ondragstart="drag(event)" src="resources/puzzle1.png"/>
+    <img class="invPuzzle2" id="invPuzzle2Img" draggable="true" ondragstart="drag(event)" src="resources/puzzle2.png"/>
+    <img class="invPuzzle3" id="invPuzzle3Img" draggable="true" ondragstart="drag(event)" src="resources/puzzle3.png"/>
+
+    <img class="xOut" id="xOutImg" src="resources/xOut.png"/>
+
+    <img class="openingScreen" id="openingScreenImg" src="resources/blackScreen.jpg"/>
+    <img class="next" id="nextImg" src="resources/next.png"/>
+    <img class="dots1" id="dots1Img" src="resources/dots.PNG"/>
+    <img class="dots2" id="dots2Img" src="resources/dots.PNG"/>
+    <img class="ohNo" id="ohNoImg" src="resources/ohNo.PNG"/>
+    <img class="overslept" id="oversleptImg" src="resources/iOverslept.jpg"/>
+    <img class="text" id="text1Img" src="resources/text1.png"/>
+    <img class="text" id="text2Img" src="resources/text2.png"/>
+    <img class="text" id="text3Img" src="resources/text3.png"/>
+
+    <img class="endText" id="text4Img" src="resources/text4.png"/>
+    <img class="endText" id="text5Img" src="resources/text5.png"/>
+    <img class="endText" id="text6Img" src="resources/text6.png"/>
+    <img class="endText" id="text7Img" src="resources/text7.png"/>
+
+    <button class="forwardButton" type="button" onclick="changeRoomsForward()">Go forward</button>
+    <button class="backButton" type="button" onclick="changeRoomsBackwards()">Go backwards</button>
+    <button class="bathroomKeyButton" id="bathroomKeyButton" type="button" onclick="keyInInventory()">key</button>
+    <button class="bedroomDresserButton" type="button" onclick="dresserPuzzle()">kh</button>
+    <button class="xOutButton" type="button" id="xOutButton" onclick="xOutPuzzle()">x</button>
+    <button class="fridgeLockButton" type="button" id="fridgeLockButton" onclick="fridgePuzzle()">FL</button>
+    <button class="openDresserButton" type="button" id="openDresserButton" onclick="dresserInInventory()">put items in inventory</button>
+    <button class="dresserNoteButton" type="button" id="dresserNoteButton" onclick="displayDresserNote()">show</button>
+    <button class="fridgeUnlockButton" type="button" id="fridgeUnlockButton" onclick="checkFridgePassword()">unlock</button>
+    <button class="puzzle1Button" id="puzzle1Button" type="button" onclick="p1InInventory()">1</button>
+    <button class="puzzle2Button" id="puzzle2Button" type="button" onclick="p2InInventory()">2</button>
+    <button class="puzzle3Button" id="puzzle3Button" type="button" onclick="p3InInventory()">3</button>
+    <button class="puzzleButton" id="puzzleButton" type="button" onclick="openPuzzle()">pzl</button>
+    <button class="magnetButton" id="magnetButton" type="button" onclick="magnetInInventory()">magnet</button>
+    <button class="computerLockButton" id="computerLockButton" type="button" onclick="computerPuzzle()">.</button>
+<!--    this.id was learned from the internet-->
+    <button class="computerColor1" id="computerColor0" type="button" onclick="changeButtonColor(this.id)"></button>
+    <button class="computerColor2" id="computerColor1" type="button" onclick="changeButtonColor(this.id)"></button>
+    <button class="computerColor3" id="computerColor2" type="button" onclick="changeButtonColor(this.id)"></button>
+    <button class="computerColor4" id="computerColor3" type="button" onclick="changeButtonColor(this.id)"></button>
+    <button class="kitchenCupsButton" id="kitchenCupsButton" type="button" onclick="displayCups()">.</button>
+    <button class="bathroomSinkButton" id="bathroomSinkButton" type="button" onclick="displaySink()">.</button>
+    <button class="bathroomBoxButton" id="bathroomBoxButton" type="button" onclick="displayBathroomBox()">.</button>
+    <button class="keypadButton" id="keypadButton" type="button" onclick="keypadPuzzle()"></button>
+    <button class="cheatButton1" id="cheatButton1" type="button" onclick="cheatPuzzle1()"></button>
+    <button class="cheatSubmitButton1" id="cheatSubmitButton1" type="button" onclick="checkCheatPuzzle1()">submit final answer</button>
+
+    <button class="kb1" id="kb1" type="button" onclick="keypadNum(this.id)"></button>
+    <button class="kb2" id="kb2" type="button" onclick="keypadNum(this.id)"></button>
+    <button class="kb5" id="kb5" type="button" onclick="keypadNum(this.id)"></button>
+    <button class="kb8" id="kb8" type="button" onclick="keypadNum(this.id)"></button>
+    <button class="kbEnter" id="kbEnter" type="button" onclick="checkKeypad()"></button>
+
+    <button class="nextButton" id="nextButton" type="button" onclick="nextPage()"></button>
+
+    <div class="box" id="keyholeBox" ondrop="dropKey(event)" ondragover="allowDrop(event)"></div>
+    <div class="box1" id="puzzle1Box" ondrop="dropP1(event)" ondragover="allowDrop(event)"></div>
+    <div class="box2" id="puzzle2Box" ondrop="dropP2(event)" ondragover="allowDrop(event)"></div>
+    <div class="box3" id="puzzle3Box" ondrop="dropP3(event)" ondragover="allowDrop(event)"></div>
+    <div class="boxYM" id="yarnMagnetBox" ondrop="dropYM(event)" ondragover="allowDrop(event)"></div>
+    <div class="boxDrain" id="drainBox" ondrop="dropD(event)" ondragover="allowDrop(event)"></div>
+    <div class="boxBoltCutter" id="boltCutterBox" ondrop="dropBC(event)" ondragover="allowDrop(event)"></div>
+
+    <input id = "num1" type = "number" min = "0" max = "9">
+    <input id = "num2" type = "number" min = "0" max = "9">
+    <input id = "num3" type = "number" min = "0" max = "9">
+    <input id = "num4" type = "number" min = "0" max = "9">
+
+</div>
+
+<canvas id="canvas" width="525" height="400"></canvas>
+
+<p id="output"> </p>
+
+</body>
+</html>
